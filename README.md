@@ -68,4 +68,26 @@ https://akhil-ai-business-website.vercel.app
 
 ---
 
+## 📸 Screenshots
+
+### 🏠 Home Page
+
+![Home Page](screenshots/home-page.png)
+
+
+### 📝 Customer Enquiry Form
+
+![Enquiry Form](screenshots/enquiry-form.png)
+
+
+### ✅ Enquiry Submission Success
+
+![Enquiry Success](screenshots/enquiry-success.png)
+
+
+### 🔐 Admin Dashboard
+
+![Admin Dashboard](screenshots/admin-dashboard.png)
+
+
 ## 🏗️ Architecture

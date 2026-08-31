@@ -68,6 +68,39 @@ https://akhil-ai-business-website.vercel.app
 
 ---
 
+---
+
+## 🚀 Key Features
+
+### 👤 Customer Side
+- Modern responsive home service website
+- AI Service Assistant interface
+- Customer enquiry submission system
+- Service selection and requirement capture
+- Success confirmation after submission
+
+
+### 🤖 AI Assistant
+- AI-powered customer support interface
+- Helps users understand available services
+- Guides customers toward booking a service
+
+
+### 🔐 Admin Dashboard
+- Secure admin authentication
+- Customer enquiry management
+- Search and filter enquiries
+- Update enquiry status
+- Track service request progress
+
+
+### 🛡️ Security
+- Supabase Authentication
+- Row Level Security (RLS)
+- Protected database access
+- Secure admin routes
+
+
 ## 📸 Screenshots
 
 ### 🏠 Home Page

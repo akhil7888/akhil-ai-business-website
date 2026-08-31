@@ -34,17 +34,75 @@ export default function Home() {
   async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
 
+    // Prevent duplicate submissions
+    if (loading) return;
+
     setSubmitted(false);
     setError("");
-    setLoading(true);
 
-    const formData = new FormData(e.currentTarget);
+    const form = e.currentTarget;
+    const formData = new FormData(form);
 
     const name = formData.get("name")?.toString().trim() || "";
     const phone = formData.get("phone")?.toString().trim() || "";
     const service = formData.get("service")?.toString().trim() || "";
     const requirement =
       formData.get("requirement")?.toString().trim() || "";
+
+    // ==========================
+    // Validation
+    // ==========================
+
+    if (!name) {
+      setError("Please enter your name.");
+      return;
+    }
+
+    if (name.length < 2) {
+      setError("Please enter a valid name.");
+      return;
+    }
+
+    if (name.length > 100) {
+      setError("Name must be less than 100 characters.");
+      return;
+    }
+
+    if (!phone) {
+      setError("Please enter your phone number.");
+      return;
+    }
+
+    if (!/^[6-9]\d{9}$/.test(phone)) {
+      setError("Please enter a valid 10-digit Indian mobile number.");
+      return;
+    }
+
+    if (!service) {
+      setError("Please select a service.");
+      return;
+    }
+
+    if (!requirement) {
+      setError("Please describe your requirement.");
+      return;
+    }
+
+    if (requirement.length < 5) {
+      setError("Please provide a little more detail about your requirement.");
+      return;
+    }
+
+    if (requirement.length > 1000) {
+      setError("Requirement must be less than 1000 characters.");
+      return;
+    }
+
+    // ==========================
+    // Submit to Supabase
+    // ==========================
+
+    setLoading(true);
 
     const { error: insertError } = await supabase
       .from("enquiries")
@@ -63,7 +121,12 @@ export default function Home() {
       return;
     }
 
+    // ==========================
+    // Success
+    // ==========================
+
     setSubmitted(true);
+    form.reset();
   }
 
   return (
@@ -286,6 +349,8 @@ export default function Home() {
                 name="name"
                 placeholder="Your name"
                 required
+                maxLength={100}
+                autoComplete="name"
                 className="w-full rounded-xl border border-gray-200 px-4 py-3 outline-none focus:border-blue-600"
               />
 
@@ -294,6 +359,9 @@ export default function Home() {
                 name="phone"
                 placeholder="Phone number"
                 required
+                maxLength={10}
+                inputMode="numeric"
+                autoComplete="tel"
                 className="w-full rounded-xl border border-gray-200 px-4 py-3 outline-none focus:border-blue-600"
               />
 
@@ -306,6 +374,7 @@ export default function Home() {
                 <option value="" disabled>
                   Select a service
                 </option>
+
                 <option value="AC Repair">AC Repair</option>
                 <option value="AC Installation">AC Installation</option>
                 <option value="Plumbing">Plumbing</option>
@@ -317,6 +386,7 @@ export default function Home() {
                 placeholder="Describe your requirement"
                 rows={4}
                 required
+                maxLength={1000}
                 className="w-full rounded-xl border border-gray-200 px-4 py-3 outline-none focus:border-blue-600"
               />
 
@@ -329,7 +399,10 @@ export default function Home() {
               </button>
 
               {submitted && (
-                <div className="rounded-xl bg-green-50 p-4 text-center text-sm font-medium text-green-700">
+                <div
+                  role="alert"
+                  className="rounded-xl bg-green-50 p-4 text-center text-sm font-medium text-green-700"
+                >
                   ✓ Enquiry submitted successfully!
                   <br />
                   Our team will contact you soon.
@@ -337,7 +410,10 @@ export default function Home() {
               )}
 
               {error && (
-                <div className="rounded-xl bg-red-50 p-4 text-center text-sm font-medium text-red-700">
+                <div
+                  role="alert"
+                  className="rounded-xl bg-red-50 p-4 text-center text-sm font-medium text-red-700"
+                >
                   {error}
                 </div>
               )}

@@ -91,3 +91,5 @@ https://akhil-ai-business-website.vercel.app
 
 
 ## 🏗️ Architecture
+
+![Architecture Diagram](screenshots/architecture-diagram.png)

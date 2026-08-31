@@ -1,36 +1,71 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Akhil AI Business Website
 
-## Getting Started
+A modern AI-powered home service business website built with Next.js, Supabase, and TypeScript.
 
-First, run the development server:
+This project includes a customer enquiry system, AI service assistant interface, secure admin authentication, and an enquiry management dashboard.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Live Demo
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+https://akhil-ai-business-website.vercel.app
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## ✨ Features
 
-To learn more about Next.js, take a look at the following resources:
+### Customer Side
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Modern responsive business website
+- Service information section
+- Customer enquiry form
+- Service selection
+- Requirement submission
+- Success confirmation
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### AI Assistant
 
-## Deploy on Vercel
+- AI service assistant UI
+- Customer support interaction design
+- Helps users understand available services
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Admin Dashboard
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Secure admin login
+- Supabase authentication
+- Customer enquiry management
+- Search enquiries
+- Filter by enquiry status
+- Update enquiry status
+
+### Security
+
+- Supabase Row Level Security (RLS)
+- Protected database access
+- Authentication-based admin access
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+
+- Next.js 16
+- React
+- TypeScript
+- Tailwind CSS
+
+### Backend
+
+- Supabase
+- PostgreSQL
+- Supabase Auth
+
+### Deployment
+
+- Vercel
+- GitHub
+
+---
+
+## 🏗️ Architecture

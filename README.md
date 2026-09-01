@@ -149,6 +149,22 @@ https://akhil-ai-business-website.vercel.app
 
 ---
 
+---
+
+## 🚀 Future Improvements
+
+The following features can be added in future versions:
+
+- Integrate a real LLM-powered customer support chatbot
+- Add appointment scheduling system
+- Add email and SMS notifications
+- Add customer service history tracking
+- Add analytics dashboard for business insights
+- Add online payment integration
+- Add AI-based service recommendations
+
+---
+
 
 ## 📸 Screenshots
 

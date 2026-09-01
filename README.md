@@ -6,6 +6,21 @@ This project includes a customer enquiry system, AI service assistant interface,
 
 ---
 
+---
+
+## 🎯 Problem Statement
+
+Small home service businesses often face challenges such as:
+
+- Managing customer enquiries manually
+- Tracking service requests efficiently
+- Providing quick responses to customers
+- Maintaining organized customer information
+
+This project solves these challenges by providing an AI-powered business website with customer enquiry management, AI assistance, and an admin dashboard for tracking service requests.
+
+---
+
 ## 🚀 Live Demo
 
 https://akhil-ai-business-website.vercel.app

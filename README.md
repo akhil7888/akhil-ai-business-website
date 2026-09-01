@@ -8,6 +8,18 @@ This project includes a customer enquiry system, AI service assistant interface,
 
 ---
 
+## ⭐ Project Highlights
+
+- Built a production-ready AI-powered business website
+- Developed customer enquiry management system
+- Integrated Supabase PostgreSQL database
+- Implemented secure admin dashboard
+- Added AI assistant interface
+- Deployed application using Vercel
+- Designed scalable full-stack architecture
+
+---
+
 ## 🎯 Problem Statement
 
 Small home service businesses often face challenges such as:

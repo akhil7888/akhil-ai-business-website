@@ -115,6 +115,40 @@ https://akhil-ai-business-website.vercel.app
 - Protected database access
 - Secure admin routes
 
+---
+
+---
+
+## ⚙️ Technical Implementation
+
+### Frontend
+
+- Built using Next.js App Router
+- Developed reusable React components
+- TypeScript used for type safety
+- Tailwind CSS used for responsive UI design
+
+### Backend & Database
+
+- Supabase used as backend platform
+- PostgreSQL database for storing customer enquiries
+- Supabase Authentication for secure admin login
+- API integration for data communication
+
+### AI Integration
+
+- AI Service Assistant interface for customer support
+- Designed for future LLM integration
+- Helps customers understand available services and booking process
+
+### Security
+
+- Protected admin routes
+- Environment variable management
+- Row Level Security (RLS) for database protection
+
+---
+
 
 ## 📸 Screenshots
 

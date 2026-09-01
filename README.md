@@ -1,5 +1,15 @@
 # Akhil AI Business Website
 
+<p align="center">
+
+<img src="https://img.shields.io/badge/Next.js-16-black?style=for-the-badge&logo=next.js">
+<img src="https://img.shields.io/badge/React-18-blue?style=for-the-badge&logo=react">
+<img src="https://img.shields.io/badge/TypeScript-blue?style=for-the-badge&logo=typescript">
+<img src="https://img.shields.io/badge/Supabase-green?style=for-the-badge&logo=supabase">
+<img src="https://img.shields.io/badge/Vercel-black?style=for-the-badge&logo=vercel">
+
+</p>
+
 A modern AI-powered home service business website built with Next.js, Supabase, and TypeScript.
 
 This project includes a customer enquiry system, AI service assistant interface, secure admin authentication, and an enquiry management dashboard.

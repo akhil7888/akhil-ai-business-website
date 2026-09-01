@@ -188,7 +188,7 @@ During the development of this project, I worked on solving several engineering 
 
 The application follows this workflow:
 
-![System Workflow](screenshots/user-workflow-diagram.png)
+![System Workflow](screenshots/system-workflow.png)
 
 
 ## 📸 Screenshots

@@ -182,6 +182,14 @@ During the development of this project, I worked on solving several engineering 
 
 ---
 
+---
+
+## 🔄 System Workflow
+
+The application follows this workflow:
+
+![System Workflow](screenshots/user-workflow-diagram.png)
+
 
 ## 📸 Screenshots
 

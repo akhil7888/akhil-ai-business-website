@@ -165,6 +165,23 @@ The following features can be added in future versions:
 
 ---
 
+---
+
+## 🧠 Challenges & Learnings
+
+During the development of this project, I worked on solving several engineering challenges:
+
+- Designing a scalable frontend architecture using Next.js App Router
+- Building reusable React components for better maintainability
+- Managing customer enquiry data with Supabase and PostgreSQL
+- Implementing secure authentication and protected admin routes
+- Connecting frontend applications with backend APIs
+- Handling environment variables securely
+- Deploying and maintaining the application using Vercel
+- Documenting the complete system architecture and development process
+
+---
+
 
 ## 📸 Screenshots
 
